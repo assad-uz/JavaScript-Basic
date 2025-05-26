@@ -13,23 +13,22 @@
             color: "Blue",
             cc: 3500,
             start: function () {
-                return console.log("The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is starting now");
+                return "The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is starting now";
             },
             drive: function () {
-                return console.log("The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is driving now");
+                return "The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is driving now";
             },
             break: function () {
-                return console.log("The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is breaking now");
+                return "The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is breaking now";
             },
             stop: function () {
-                return console.log("The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is stopped now");
+                return "The Car"+" "+this.name+" "+this.model+" "+this.color+" "+this.cc+" "+"is stopped now";
             }
         }
-        car.start();
-        car.drive();
-        car.break();
-        car.stop();
-        // console.log(car.start());
+        console.log(car.start());
+        console.log(car.drive());
+        console.log(car.break());
+        console.log(car.stop());
     </script>
 </body>
 </html>
