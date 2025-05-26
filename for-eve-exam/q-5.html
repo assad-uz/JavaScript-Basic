@@ -11,6 +11,7 @@
         var positive = 0;
         var negative = 0;
         var zero = 0;
+        var sum = 0
 
         for (let i = 0; i<data.length; i++) {
             if (data[i]>0){
@@ -20,10 +21,12 @@
             } else {
                 zero ++;
             }
+            sum += data[i];
         }
         document.write("Positive Number:"+positive+"<br>")
         document.write("Negative Number:"+negative+"<br>")
         document.write("Zero:"+zero+"<br>")
+        document.write ("Total Sum:"+" "+sum+ "<br>")
     </script>
 </body>
 </html>
