@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let pc = {
+            brand: "Intel",
+            processor: "Core i3",
+            ram: 16,
+            rom: "1TB",
+            computer: function () {
+            return this.brand+" "+this.processor+" "+this.ram+" "+this.rom;
+        }
+
+        }
+        console.log(pc.computer());
+    </script>
+    <!-- <script> 
+        function computer() {
+            return pc.brand+" "+pc.processor+" "+pc.ram+" "+pc.rom;
+        }
+        computer();
+    </script> -->
+</body>
+</html>
