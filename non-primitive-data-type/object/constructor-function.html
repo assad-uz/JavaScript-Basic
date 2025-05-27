@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script> 
+        function person = {
+            name:"A",
+            age:23,
+            id:328
+        }
+        person = {},
+
+        console.log(person)
+    </script> -->
+
+    <script> 
+    // constructor function
+        function Person (n,a,i) {
+            this.name = n;
+            this.age = a;
+            this.id = i;
+        }
+        const assad = new Person ("Assad",28,328)
+        const azim = new Person ("Azim",29,329)
+        const osman = new Person ("Osman",25,330)
+
+        document.write("Name:"+" "+assad.name+"<br>"+"Age:"+" "+assad.age+"<br>"+"ID:"+" "+assad.id+"<br>"+"<br>")
+        document.write("Name:"+" "+azim.name+"<br>"+"Age:"+" "+azim.age+"<br>"+"ID:"+" "+azim.id+"<br>"+"<br>")
+        document.write("Name:"+" "+osman.name+"<br>"+"Age:"+" "+osman.age+"<br>"+"ID:"+" "+osman.id+"<br>"+"<br>")
+        console.log(assad)
+        console.log(azim)
+        console.log(osman)
+    </script>
+</body>
+</html>
