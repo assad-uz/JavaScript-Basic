@@ -1,0 +1,10 @@
+which one is standard for JS
+1. function () {
+                return console.log("The Car"+" "+this.name+" "+"is starting now"); 
+            } 
+	car.start();
+	
+2. function () {
+		return "The Car"+" "+this.name+" "+"is starting now";
+		}
+	console.log(car.start());
