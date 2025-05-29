@@ -6,8 +6,28 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script> 
-        
+    // array.splice(start, deleteCount, item1, item2, ...)
+
+    // only remove
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+fruits.splice(1, 2);  // index 1 থেকে ২টি উপাদান মুছে ফেলা হবে
+
+console.log(fruits); // ["Apple", "Orange"]
+
+        // remove+add
+        let fruits = ["Apple", "Banana", "Mango", "Orange"];
+fruits.splice(1, 2, "Guava", "Pineapple");
+
+console.log(fruits); // ["Apple", "Guava", "Pineapple", "Orange"]
+
+        // only add
+        let colors = ["Red", "Green", "Blue"];
+colors.splice(1, 0, "Yellow");  // index 1 এ কিছু না মুছে "Yellow" বসাবে
+
+console.log(colors); // ["Red", "Yellow", "Green", "Blue"]
+
     </script>
 </body>
 </html>
