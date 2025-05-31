@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    // global
+        let a = 15;
+        let b = 5;
+        function add(){
+            return a+b;
+        }
+        console.log(add());
+        function substract(){
+            return a-b;
+        }
+        console.log(substract());
+    </script>
+    <script> 
+    // local
+        function plus(){
+            let a = 15;
+            let b = 5;
+            return a+b;
+        }
+        console.log(plus());
+        function minus(){
+            return a-b;
+        }
+        console.log(minus());
+    </script>
+</body>
+</html>
