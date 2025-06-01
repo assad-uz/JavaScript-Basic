@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+            this.greet =  function () {
+                console.log("Hello, My name is"+this.name+"and age"+this.age);
+            };
+        }
+        let person1 = new Person("Assad", 27);
+        let person2 = new Person("Rafia", 26);
+        let person3 = new Person("Farhana", 25);
+        person1.greet();
+    </script>
+</body>
+</html>
