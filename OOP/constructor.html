@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        *{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        class Course {
+            constructor(name,age,id){
+                this.name = name;
+                this.age = age;
+                this.id = id;
+            }
+            show (){
+                document.write ("My name is"+" "+this.name+". "+ "My age is"+" "+this.age+". "+"My ID is"+" "+this.id)
+            }
+        }
+        const wdpf = new Course("Assad",25,1288328);
+        const wdpf2 = new Course("Azim",26,1288329);
+        const wdpf3 = new Course("Nazmul",27,1288330);
+        wdpf.show();
+        document.write("<br>")
+        wdpf2.show();
+        document.write("<br>")
+        wdpf3.show();
+        document.write("<br>")
+        document.write("Trainee's name"+" "+wdpf.name+" "+"and his age is"+" "+wdpf.age+".")
+
+    </script>
+</body>
+</html>
