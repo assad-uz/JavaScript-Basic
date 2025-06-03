@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        class Car{
+            constructor(b,m,c){
+                this.model = m;
+                this.brand = b;
+                this.color = c;
+            }
+            speed(){
+                return "this "+this.brand+" runs so fast!!!"
+            }
+        }
+        const car1 = new Car("BMW","B321","Dark Blue");
+        // document.write(car1.speed());
+        document.write("This is my "+car1.brand+" and the color is "+car1.color);
+        console.log(car1);
+        document.write("<br>")
+
+            class Bike extends Car{
+                constructor(b,m,c,cc,disk){
+                    super(b,m,c);
+                    this.cc = cc;
+                    this.break = disk;
+                }
+                run(){
+                    return "My bike run so fast."
+                }
+            }
+            const bike1 = new Bike("YAMAHA","R15","Black",150,"Dual Disk");
+            document.write("My "+bike1.brand+" bike"+ " has "+ bike1.cc+" CC")
+
+
+    </script>
+</body>
+</html>
