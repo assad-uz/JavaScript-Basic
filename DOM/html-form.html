@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-FORM</title>
+    <style> 
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="width: 500px;margin: auto;background-color:#b0b4dd; border-radius: 10px; padding: 5px;"> 
+
+        <div style="line-height: .4; text-align: center;"> 
+        <h2>Name: Assaduzzaman</h2>
+        <h3>ID: 1288328</h3>
+        </div>
+        <fieldset> 
+        <h4>Student Registration Form</h4>
+        <hr>
+        <form name="f"> 
+            ID: <br>
+            <input type="text" name="fID" placeholder="Enter your ID"> <br><br>
+            Name: <br>
+            <input type="text" name="fName" placeholder="Enter your name"> <br><br>
+            Address: <br>
+            <textarea name="fAddress" id="" placeholder="Enter your address"></textarea> <br><br>
+            Round: <br>
+            <select name="fRound">
+                <option>65</option>
+                <option>64</option>
+                <option>63</option>
+            </select>
+            <br><br>
+            Gender: <br>
+            <input type="radio" name="fg" value="Male">Male
+            <input type="radio" name="fg" value="Female">Female
+            <input type="radio" name="fg" value="Others">Others
+            <br><br>
+            Education: <br>
+            <input name="fEdu" type="checkbox" value="SSC">SSC
+            <input name="fEdu" type="checkbox" value="HSC">HSC 
+            <input name="fEdu" type="checkbox" value="BBA">BBA <br><br>
+
+            <input name="fEdu" type="submit" onclick="myForm()" value="submit">
+            <input name="fEdu" type="reset" value="Reset">
+        </form>
+    </fieldset>
+    </div>
+    <script> 
+        function myForm () {
+            let id = document.f.fID.value;
+            let n = document.f.fName.value;
+            let a = document.f.fAddress.value;
+            let r = document.f.fRound.value;
+            let gender = "";
+            let chkEdu = "";
+
+            for (i=0;i<document.f.fg.length;i++) {
+                if (document.f.fg[i].checked) {
+                    gender = document.f.fg[i].value;
+                }
+            }
+            
+            for (let j=0; j<document.form.fEdu.length;j++) {
+                if (document.form.fEdu[j].checked) {
+                    chkEdu+=document.form.fEdu[j].value+", ";
+                }
+            }
+
+            p = open("", "", "width=400, height=400");
+
+            with(p.document){
+            write("ID: "+id+"<br>");
+            write("Name: "+n+"<br>");
+            write("Address: "+a+"<br>");
+            write("Round: "+r+"<br>");
+            write("Gender: "+gender+"<br>");
+            write("Education: "+chkEdu+"<br>");
+            // write("<input>");
+          }
+
+        }
+    </script>
+</body>
+</html>
