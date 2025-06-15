@@ -48,7 +48,8 @@
             <input name="fEdu" type="checkbox" value="HSC">HSC 
             <input name="fEdu" type="checkbox" value="BBA">BBA <br><br>
 
-            <input name="fEdu" type="submit" onclick="myForm()" value="submit">
+            <!-- <input type="button" onclick="myForm()" value="Submit"> -->
+            <input name="fEdu" type="submit" onclick="myForm()" value="Submit">
             <input name="fEdu" type="reset" value="Reset">
         </form>
     </fieldset>
@@ -68,13 +69,13 @@
                 }
             }
             
-            for (let j=0; j<document.form.fEdu.length;j++) {
-                if (document.form.fEdu[j].checked) {
-                    chkEdu+=document.form.fEdu[j].value+", ";
+            for (let j=0; j<document.f.fEdu.length;j++) {
+                if (document.f.fEdu[j].checked) {
+                    chkEdu+=document.f.fEdu[j].value+", ";
                 }
             }
 
-            p = open("", "", "width=400, height=400");
+            let p = open("", "", "width=500, height=600");
 
             with(p.document){
             write("ID: "+id+"<br>");
@@ -83,7 +84,8 @@
             write("Round: "+r+"<br>");
             write("Gender: "+gender+"<br>");
             write("Education: "+chkEdu+"<br>");
-            // write("<input>");
+            write("<input type='button' value='Close me' onclick='self.close();' />");
+            write("<input type='button' value='Print' onclick='self.print();' />");
           }
 
         }
