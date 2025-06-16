@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Syncronous Function</h1>
+    <script> 
+        console.log("Step 1");
+
+        function longTask(){
+            for (let i=0; i<1000000000; i++){
+            };
+            console.log("Step 2");
+        };
+    longTask()
+    console.log("Step 3");
+    </script>
+</body>
+</html>
