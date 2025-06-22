@@ -57,7 +57,7 @@
         class FormValues {
           constructor(formData){
             for(let[name,value] of formData) {
-              this[name] = formData.getAll(name).join("","");
+              this[name] = formData.getAll(name).join(" , ");
             }
           }
 
@@ -75,10 +75,9 @@
         }
         form.onsubmit=async(e)=>{
             e.preventDefault();
-            //user for default event program stop
                 var fm=document.querySelector('#form');
+
                 var form_data=new FormData(fm);
-                    
                 var f=new FormValues(form_data);
                 f.getData();
             }
