@@ -54,7 +54,7 @@
                     this[name] = formData.getAll(name).join(' , ')
                 }
             }
-            getData(){
+            getDisplay(){
                 var result = "ID: "+this.fID+'<br>';
                 result += "Name: "+this.fName+'<br>';
                 result += "Address: "+this.fAddr+'<br>';
@@ -72,7 +72,7 @@
 
             var form_data = new FormData(fm);
             var f = new FormValues(form_data);
-            f.getData();
+            f.getDisplay();
         }
     </script>
 </body>
